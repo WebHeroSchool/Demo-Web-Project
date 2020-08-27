@@ -555,10 +555,12 @@
 	}
 
 	.fifth-section__text {
+		margin-top: 60px;
 		position: static;
-		margin-left: 80.7%;
+		margin-left: 77.8%;
 		font-size: 18px;
 		color: #C4C4C4;
+		text-transform: uppercase;
 	}
 
 	.fifth-section__pictures {
@@ -570,6 +572,7 @@
 	}
 
 	.footer {
+		margin-top: 70px;
 		width: 100%;
 		height: 300px;
 		background-color: black;
