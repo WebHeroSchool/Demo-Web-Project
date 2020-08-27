@@ -1,8 +1,13 @@
 @media all and (min-width: 1024px) {
 	.body {
 		max-width: 1170px;
+		height: 100%;
 		margin: 0 auto;
 		font-family: 'Gotham Pro';
+	}
+
+	.head {
+
 	}
 
 	.header__head {
@@ -12,13 +17,13 @@
 	}
 
 	.head__logo {
-		padding: 0 35px 0 0;
 		height: 55px;
 		width: 55px;
 	}
 
-	.head-list {
+	.head__list {
 		display: flex;
+		padding-right: 281px;
 	}
 
 	.list__item {
@@ -83,27 +88,41 @@
 		position: relative;
 	}
 
-	.first-section__background {
-		position: relative;
-		width: 1170px;
-	}
-
 	.first-section__title {
 		position: absolute;
-		top: -50%;
+		top: 140px;
+		left: 200px;
+		font-size: 30px;
 		font-weight: 500;
-		color: orange;
+		color: white;
+		text-transform: uppercase;
+		z-index: 10;
 	}
 
 	.excerpt__subtext-link {
 		position: absolute;
-		top: -40%;
+		top: 270px;
+		left: 200px;
 		font-weight: 500;
-		color: purple;
+		font-size: 12px;
+		text-transform: uppercase;
+		color: white;
+	}
+
+	.excerpt__subtext-link::after {
+		position: absolute;
+		top: 1px;
+		left: 80px;
+		content: url(images/Arrow.png);
+	}
+
+	.first-section__background {
+		width: 1170px;
 	}
 
 	.second-section {
 		display: block;
+		margin-top: 50px;
 	}
 
 	.second-section__title {
@@ -371,6 +390,7 @@
 	}
 
 	.third-section {
+		margin-top: 40px;
 		display: flex;
 		height: 500px;
 		justify-content: space-around;
@@ -408,16 +428,22 @@
 
 	.second-panel__excerpt::after {
 		position: absolute;
+		left: 95px;
 		content: url(images/Arrow.png);
 	}
 
-	.forth-section__title {
+	.fourth-section {
+		margin-top: 70px;
+	}
+
+	.fourth-section__title {
 		text-align: center;
 		font-size: 22px;
 		text-transform: uppercase;
 	}
 
-	.forth-section__columns {
+	.fourth-section__columns {
+		margin-top: 50px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
